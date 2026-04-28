@@ -1,0 +1,31 @@
+// Carbon component overrides — minimal, surgical
+
+// Button: adjust border-radius to match design intent
+.cds--btn {
+  border-radius: 0; // Carbon flat by design — keep it
+}
+
+// Tabs: remove bottom border on selected tab for cleaner look
+.cds--tabs__nav-item--selected .cds--tabs__nav-link {
+  border-bottom-color: var(--cds-interactive, #0f62fe);
+}
+
+// Code snippet: ensure IBM Plex Mono
+.cds--snippet code {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+// Toggle: custom label alignment
+.cds--toggle__label-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+// Notification inline: remove min-width constraint
+.cds--inline-notification {
+  max-width: 100%;
+}
+
+// Tag: tighter padding for mode chips
+.cds--tag--sm {
+  padding-inline: 8px;
+}
